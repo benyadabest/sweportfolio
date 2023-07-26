@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Shvartsman CS SWE Portfolio Website</title>
+    <meta name = "description" content = "Insight into Ben Shvartsman's accolades and his life through an interactive portfolio website."/>
+    <link rel = "stylesheet" type = "text/css" href= "styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Montserrat:wght@300&family=Open+Sans:wght@500&family=Source+Serif+4&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/sexy.ico" type="image/x-icon">
+    <link rel="icon" href="images/sexy.png" type="image/png">
+</head>
+<body>
+    <main id="content">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="images/benresume.pdf" target="_blank" class="button">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="mission">
+                <p><span class="intro">Hello, I am Benjamin Shvartsman </span><i class="fa fa-hand-peace-o" style="font-size:48px; color: blue;"></i><br>
+                Although I am among many fierce applicants,
+                I strongly believe I am your candidate because I am</p>
+                <div id = 'adjcontainer'>
+                    <p id="adj"></p>
+                </div>
+            </div>
+            <a href="javascript:window.location.reload(true)"><img title="HOME! Click to refresh 💪🏻" src="images/sexy.png"/></a>
+            <video class="video-wrapper" autoplay muted loop>
+                <source src="images/wrestle.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </header>
+
+        <section id="aboutme">
+            <div class="section-container">
+                <h2>About Me <svg fill="blue" width="auto" height="3.5rem" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" stroke="blue"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M74 208H64a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h15.94A535.78 535.78 0 0 1 64 384h128a535.78 535.78 0 0 1-15.94-128H192a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16h-10l33.89-90.38a16 16 0 0 0-15-21.62H144V64h24a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8h-24V8a8 8 0 0 0-8-8h-16a8 8 0 0 0-8 8v24H88a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h24v32H55.09a16 16 0 0 0-15 21.62zm173.16 251.58L224 448v-16a16 16 0 0 0-16-16H48a16 16 0 0 0-16 16v16L8.85 459.58A16 16 0 0 0 0 473.89V496a16 16 0 0 0 16 16h224a16 16 0 0 0 16-16v-22.11a16 16 0 0 0-8.84-14.31zm92.77-157.78l-3.29 82.2h126.72l-3.29-82.21 24.6-20.79A32 32 0 0 0 496 256.54V198a6 6 0 0 0-6-6h-26.38a6 6 0 0 0-6 6v26h-24.71v-26a6 6 0 0 0-6-6H373.1a6 6 0 0 0-6 6v26h-24.71v-26a6 6 0 0 0-6-6H310a6 6 0 0 0-6 6v58.6a32 32 0 0 0 11.36 24.4zM384 304a16 16 0 0 1 32 0v32h-32zm119.16 155.58L480 448v-16a16 16 0 0 0-16-16H336a16 16 0 0 0-16 16v16l-23.15 11.58a16 16 0 0 0-8.85 14.31V496a16 16 0 0 0 16 16h192a16 16 0 0 0 16-16v-22.11a16 16 0 0 0-8.84-14.31z"></path></g></svg>
+                </h2>
+                <img src="images/medance.jpg" id="img1">
+                <img src="images/mechessin.jpg" id="img2">
+                <img src="images/mewrestle.JPG" id="img3">
+                <img src="images/mecoding.JPG" title="Have a great day, thanks for making it this far &#128526;" id="img4">
+                <div class="content-wrapper">
+                  <div class="photo">
+                  </div>
+                  <div class="text-area">
+                    <p>
+                      <h3>I'm a wrestler @ Cornell, future software engineer, ai enthusiast, starbucks consumer, judoka, quality ping pong player, and chess.com addict!</h3><br>
+                      Whether it's being in charge of my sister's and my dance couple (she will say she was &#128521;), being a 4x captain of Deerfield HS chess team (chess.com elo of 2129), or leading the <a href="https://youtu.be/QOnF1mlcn3U" target="_blank"
+                      rel="noopener noreferrer" style="text-decoration: underline;">wrestling</a> team to its highest ever team state finish with 2nd (2x captain, 3x All-State, 1x Undefeated State Champion), I strive to be a leader and help people around me succeed. <br> <br>
+
+                        Regarding coding, I am passionate/intrigued by its difficulty and I am always trying to expand my computer science dexterity!  I am always ready to pick up and learn new technologies or skills; however, my current skill set consists of:
+                    </p> <br>
+                    <ul>
+                        <ul style="font-weight: bold;">LANGUAGES</ul>
+                        <ul style="font-weight: lighter; margin-left: 15px; font-size: 1.2rem;">Python, HTML/CSS, Javascript, Java, Dart</ul>
+                        <ul style="font-weight: lighter; margin-left: 15px; font-size: 1.2rem;">English (fluent), Russian (native), Spanish (working profiency)</ul>
+
+<br>
+                        <ul style="font-weight: bold;">LIBRARIES/FRAMEWORKS</ul>
+                        <ul style="font-weight: lighter; margin-left: 15px; font-size: 1.2rem;">Django, React, Scikit-learn, Numpy, Pandas, Matplotlib</ul>
+<br>
+                        <ul style="font-weight: bold;">Tools, Platforms & More</ul>
+                        <ul style="font-weight: lighter; margin-left: 15px; font-size: 1.2rem;">Prompt Engineering, ChatGPT, Git, Github, Figma</ul>
+<br>
+                        <ul style="font-weight: bold;">Soft Skills</ul>
+                        <ul style="font-weight: lighter; margin-left: 15px; font-size: 1.2rem;">Leadership, Listening,
+                            Communication/Collaboration,
+                            Creativity</ul>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section id="projects">
+            <section class="gallery-section">
+                <h2>Projects <svg fill="blue" width="auto" height="3.5rem" viewBox="0 -64 640 640" xmlns="http://www.w3.org/2000/svg" stroke="blue"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"></path></g></svg></h2>            <div class="picture-gallery">
+              <div class="gallery-item">
+                <h4>Portfolio Websites</h4><br>
+                <p><a href="https://ben.shvartsman.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">ben.shvartsman.com</a> and <a href="https://julia.shvartsman.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">julia.shvartsman.com</a>(Awwward winner) are two portfolio websites designed to showcase my other cs projects and my sister's dancing!</p>
+                <ul style="font-weight: bold;">SKILLS</ul>
+                <ul style="font-weight: lighter; margin-left: 15px;">HTML/CSS, Javascript</ul>
+                <a href="https://www.github.com/benyadabest/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">GitHub</a>
+              </div>
+              <div class="gallery-item">
+                <h4>Club Management System</h4><br>
+                <p>Provided several local wrestling clubs with athlete/club management system with React frontend and Django backend</p>
+                <ul style="font-weight: bold;">SKILLS</ul>
+                <ul style="font-weight: lighter; margin-left: 15px;">Django, Python, React, Javascript, SQL Lite</ul>
+                <a href="https://www.github.com/benyadabest/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">GitHub</a>
+              </div>
+              <div class="gallery-item">
+                <h4>ML PH Recommender</h4><br>
+                <p>Combining webscraping and image classification machine learning to extract attributes and recommend actresses</p>
+                <ul style="font-weight: bold;">SKILLS</ul>
+                <ul style="font-weight: lighter; margin-left: 15px;">Python, Scikit-learn, Numpy, Machine Learning, Deep Learning</ul>
+                <a href="https://www.github.com/benyadabest/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">GitHub</a>
+              </div>
+              <div class="gallery-item">
+                <h4>OpticsPlanet Inc. ChatGPT PlugIn</h4><br>
+                <p>Tool allows ChatGPT to interact with external API and access up-to-date information from OpticsPlanet for customers</p>
+                <ul style="font-weight: bold;">SKILLS</ul>
+                <ul style="font-weight: lighter; margin-left: 15px;">Python, ChatGPT</ul>
+                <a href="https://www.github.com/benyadabest/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">GitHub</a>
+              </div>
+        </div></section></section>
+
+
+        <section id="footer">
+            <div class="footer-content">
+              <h2>
+                Contact Me <svg class="jump-shaking" jump-shaking fill="blue" width="auto" height="3.5rem" viewBox="0 -64 640 640" xmlns="http://www.w3.org/2000/svg" stroke="blue"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M519.2 127.9l-47.6-47.6A56.252 56.252 0 0 0 432 64H205.2c-14.8 0-29.1 5.9-39.6 16.3L118 127.9H0v255.7h64c17.6 0 31.8-14.2 31.9-31.7h9.1l84.6 76.4c30.9 25.1 73.8 25.7 105.6 3.8 12.5 10.8 26 15.9 41.1 15.9 18.2 0 35.3-7.4 48.8-24 22.1 8.7 48.2 2.6 64-16.8l26.2-32.3c5.6-6.9 9.1-14.8 10.9-23h57.9c.1 17.5 14.4 31.7 31.9 31.7h64V127.9H519.2zM48 351.6c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16zm390-6.9l-26.1 32.2c-2.8 3.4-7.8 4-11.3 1.2l-23.9-19.4-30 36.5c-6 7.3-15 4.8-18 2.4l-36.8-31.5-15.6 19.2c-13.9 17.1-39.2 19.7-55.3 6.6l-97.3-88H96V175.8h41.9l61.7-61.6c2-.8 3.7-1.5 5.7-2.3H262l-38.7 35.5c-29.4 26.9-31.1 72.3-4.4 101.3 14.8 16.2 61.2 41.2 101.5 4.4l8.2-7.5 108.2 87.8c3.4 2.8 3.9 7.9 1.2 11.3zm106-40.8h-69.2c-2.3-2.8-4.9-5.4-7.7-7.7l-102.7-83.4 12.5-11.4c6.5-6 7-16.1 1-22.6L367 167.1c-6-6.5-16.1-6.9-22.6-1l-55.2 50.6c-9.5 8.7-25.7 9.4-34.6 0-9.3-9.9-8.5-25.1 1.2-33.9l65.6-60.1c7.4-6.8 17-10.5 27-10.5l83.7-.2c2.1 0 4.1.8 5.5 2.3l61.7 61.6H544v128zm48 47.7c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16z"></path></g></svg>
+              </h2>
+              <p><a id="mail" style="text-decoration: underline; cursor: pointer;">
+                Email: ben.shvartsman@gmail.com</a>
+              </p>
+              <p>
+                Phone: 224-412-6020
+              </p>
+              <div class="socialbottom">
+                <a
+                  href="https://www.facebook.com/benjudo03"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="images/fb.png" class="black1"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/benjamin-shvartsman-615466181/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="images/in.png" class="black2"
+                /></a>
+                <a
+                  href="https://www.instagram.com/bshvartsman3/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="images/insta.svg" class="black3"
+                /></a>
+                <a
+                  href="https://www.github.com/benyadabest/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="images/github.png" class="black4"
+                /></a>
+              </div>
+            </div>
+            <p id="visitor-count"></p>
+          </section>
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function() {
+          $.ajax({
+              url: 'visitor_count.php',
+              type: 'GET',
+              success: function(count) {
+                  document.getElementById("visitor-count").textContent = count;
+              },
+              error: function() {
+                  document.getElementById("visitor-count").textContent = '';
+              }
+          });
+      });
+      </script>
+      <script src="script.js"></script>
+</body>
+</html>
