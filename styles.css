@@ -162,6 +162,7 @@
     transform: translateX(100rem);
     animation: slideIn 0.5s forwards;
     padding: 0 1rem;
+    width: fit-content;
   }
   
   nav ul li:nth-child(1) {
@@ -232,6 +233,24 @@
     to {
       transform: translateX(0);
     }
+  }
+
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1.25rem;
+    right: 1.25rem;
+    padding: 4px;
+    border-radius: 50%;
+    border: blue solid 1px;
+    background: blue;
+    cursor: pointer;
+    display: none;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+    transition: transform 0.2s;
   }
   
   .button {
@@ -454,16 +473,6 @@
     font-family: "SF Pro Light", "Source Serif 4", sans-serif;
   }
   
-  @media (max-width: 768px) {
-    #aboutme .content-wrapper {
-      flex-direction: column;
-    }
-  
-    #aboutme .photo,
-    #aboutme .text-area {
-      max-width: 100%;
-    }
-  }
   
   #projects {
     width: 100%;
@@ -488,6 +497,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 50px;
+    margin: auto 0;
   }
   
   .gallery-item {
@@ -499,7 +509,7 @@
   
   .gallery-item p,
   .gallery-item ul {
-    text-align: left;
+    text-align: center;
     font-size: 1rem;
   }
   
@@ -525,10 +535,64 @@
       scale: .9;
     } */
   
-  @media screen and (max-width: 910px) {
+    @media (max-width: 844px) {
+      .hamburger{
+        display: block;
+        bottom: 1.25rem;
+        top: auto;
+      }
+    }
+  
+  @media (max-width: 1080px) {
     header {
       font-size: 2rem;
     }
+
+    .hamburger{
+      display: block;
+    }
+
+    nav {
+      position: fixed;
+      transform: translateY(-100%);
+      top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+      background: black;
+      color: white;
+      list-style: none;
+      padding-top: 4rem;
+    }
+
+    nav ul li a {
+      font-size: 2.5rem;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      margin-left: 0;
+    }
+
+    .button:hover {
+      color:black;
+    }
+
+    nav ul {
+      line-height: 100px;
+      display: block;
+      text-align: center;
+      margin-left: 4rem;
+  }
+
+  header img {
+    top: -7%;
+  }
   
     header a {
       font-size: 1.5rem;
@@ -572,6 +636,35 @@
     #aboutme #img1, #aboutme #img2, #aboutme #img3, #aboutme #img4 {
       display: none;
     }
+
+    .hamburger{
+      display: block;
+      bottom: 1.25rem;
+      top: auto;
+    }
+
+    nav {
+      position: fixed;
+      transform: translateY(-100%);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+      background: black;
+      color: white;
+      list-style: none;
+      padding-top: 4rem;
+    }
+
+    nav a {
+      display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+    }
+
     #aboutme h3 {
       font-size: 2rem;
     }
@@ -584,15 +677,6 @@
   
     header a {
       font-size: 1.3rem;
-      padding-top: 0;
-    }
-  
-    header img {
-      top: 10%;
-    }
-  
-    nav {
-      margin: 0 auto;
       padding-top: 0;
     }
   
