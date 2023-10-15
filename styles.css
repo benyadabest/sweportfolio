@@ -40,7 +40,6 @@
     width: 100%;
     height: auto;
     min-height: 100vh;
-    min-width: 844px;
     overflow: hidden;
   }
   
@@ -76,7 +75,7 @@
   header img {
     object-fit: cover;
     position: absolute;
-    top: 6.5%;
+    top: 4%;
     left: 5%;
     height: 130px;
     max-width: 130px;
@@ -401,7 +400,7 @@
     object-fit: cover;
     position: absolute;
     top: 10%;
-    left: 0;
+    left: 2.5%;
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -435,7 +434,7 @@
     object-fit: cover;
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 2.5%;
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -552,6 +551,11 @@
       display: block;
     }
 
+    header img {
+      top: -3.6rem;
+      left: 2%;
+    }
+
     nav {
       position: fixed;
       transform: translateY(-100%);
@@ -588,10 +592,6 @@
       display: block;
       text-align: center;
       margin-left: 4rem;
-  }
-
-  header img {
-    top: -7%;
   }
   
     header a {
@@ -632,7 +632,7 @@
     }
   }
   
-  @media screen and (max-width: 480px) {
+  @media (max-width: 480px) {
     #aboutme #img1, #aboutme #img2, #aboutme #img3, #aboutme #img4 {
       display: none;
     }
@@ -641,6 +641,12 @@
       display: block;
       bottom: 1.25rem;
       top: auto;
+    }
+
+    #aboutme .photo {
+      flex: 0;
+      max-width: 0;
+      padding-right: 0;
     }
 
     nav {
@@ -655,6 +661,13 @@
       color: white;
       list-style: none;
       padding-top: 4rem;
+    }
+
+    header img {
+      top: -6rem;
+      height: 100px;
+      width: 100px;
+      left: 2%;
     }
 
     nav a {
